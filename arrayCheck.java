@@ -59,8 +59,17 @@ public class arrayCheck {
                 System.out.println("Max integer in array: " + max);
             } 
             else if(choice == 4){
-                System.out.println("Average not implemented.");   
-            } 
+                int total = 0;
+                for(int i = 0; i< randomArray.length; i++){
+                    total += randomArray[i];
+                }
+                int average = total / randomArray.length;
+                System.out.print("Differences from average: ");
+                for(int j = 0; j < randomArray.length; j++){
+                    int dif = randomArray[j] - average;
+                    System.out.print(dif + " ");
+                } 
+            }
             else if (choice == 5) {
                 System.out.println("Odd/Even index sums not implemented.");
             }
